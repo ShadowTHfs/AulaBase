@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfólio - Arthur</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css"/>
+
+    <!-- AOS – Animate On Scroll (CDN) -->
+    <link href="https://unpkg.com/aos@3.0.0/dist/aos.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <header class="navbar">
+        <div class="logo">ArthurDesign</div>
+        <nav class="nav-menu">
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#projetos" class="nav-link">Projetos</a>
+            <a href="#contato" class="nav-link">Contato</a>
+            <a href="#blog" class="nav-link">Blog</a>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO / SOBRE MIM ==================== -->
+    <section id="sobre" class="section about">
+        <div class="container" data-aos="fade-up">
+            <h1>Olá! Eu sou Arthur, desenvolvedor web.</h1>
+            <p>Criar interfaces incríveis e soluções digitais criativas é a minha paixão.</p>
+            <a href="#projetos" class="btn">Ver Meus Projetos</a>
+        </div>
+    </section>
+
+    <!-- ==================== PROJETOS ==================== -->
+    <section id="projetos" class="section projects">
+        <div class="container" data-aos="fade-up">
+            <h2>Meus Projetos</h2>
+            <div class="grid">
+                <!-- ----- CARD EXEMPLO ----- -->
+                <article class="card">
+                    <img src="images/project1.png" alt="Projeto 1"/>
+                    <div class="card-body">
+                        <h3>Gerenciador de Tarefas</h3>
+                        <p>App web para planejar e acompanhar tarefas do dia a dia.</p>
+                        <ul class="tech-list">
+                            <li>HTML5</li><li>CSS3</li><li>JavaScript (ES6)</li>
+                        </ul>
+                        <a href="#" class="btn">Veja ao vivo →</a>
+                    </div>
+                </article>
+
+                <!-- Repita o bloco acima para cada projeto -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTATO ==================== -->
+    <section id="contato" class="section contato">
+        <div class="container" data-aos="fade-up">
+            <h2>Fale Conosco</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Seu Nome" required />
+                <input type="email" placeholder="Seu Email" required />
+                <textarea placeholder="Sua Mensagem" rows="4" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <p id="formMsg" class="msg"></p>
+        </div>
+    </section>
+
+    <!-- ==================== BLOG ==================== -->
+    <section id="blog" class="section blog">
+        <div class="container" data-aos="fade-up">
+            <h2>Blog</h2>
+            <div class="posts-grid">
+                <!-- ----- POST PREVIEW ----- -->
+                <article class="post">
+                    <img src="images/blog1.jpg" alt="Post 1"/>
+                    <div class="content">
+                        <h3>Como criar animações CSS avançadas</h3>
+                        <p>Aprenda a usar @keyframes e transformações para deixar seus sites mais dinâmicos.</p>
+                        <a href="#" class="btn">Leia o artigo →</a>
+                    </div>
+                </article>
+
+                <!-- Adicione mais posts aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> ArthurDesign. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- AOS init -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: "ease-out",
+            once: true
+        });
+    </script>
+</body>
+</html>
